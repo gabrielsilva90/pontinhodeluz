@@ -1,0 +1,33 @@
+*{
+	margin: 0px;
+	padding:0%;
+
+}
+body{
+	background: url('assets/home-bc.png');
+	background-repeat:no-repeat;
+	background-position:right top;
+	background-size: 35% ;
+}
+header{
+	background: url('assets/home.png');
+	background-repeat:no-repeat;
+	background-position:right top;
+	background-size: 10% ;
+}
+.meio img{
+	width: 89px;
+	padding-left: 5%;
+	padding-top: 50px;
+}
+.meio nav ul li{
+	font-family:bold;
+	font-size: 1em;
+	color: #005884;
+	font-style: normal;
+	text-align: left
+	line-height: 0.86em;
+	padding-left: 5%;
+	padding-top: 24px;
+    
+}
