@@ -1,26 +1,35 @@
-*{
-	margin: 0px;
-	padding:0%;
-
+html, body{
+	margin: 0;
+	padding:0;
+    display: flex;
+    flex-direction: column;
 }
 body{
-	background: url('assets/home-bc.png');
-	background-repeat:no-repeat;
-	background-position:right top;
-	background-size: 35% ;
+	background: url(assets/home.png) no-repeat 90% 123px, 
+	url(assets/home-bc.png) no-repeat right top ;
+	/*background-repeat:no-repeat;
+	background-position:right top;*/
+	background-size: 22%, 35%;
+	width: 100%;
 }
+
 header{
-	background: url('assets/home.png');
-	background-repeat:no-repeat;
-	background-position:right top;
-	background-size: 10% ;
+	margin: 0;
+	padding:0;
 }
-.meio img{
+
+.menu {
+	position: fixed;
+	top: 50px;
+	left: 5%;
+	z-index: 1;
+}
+.menu img{
 	width: 89px;
-	padding-left: 5%;
-	padding-top: 50px;
+	padding-left: 0%;
+	/*padding-top: 50px;*/
 }
-.meio nav ul li{
+.menu nav ul li{
 	font-family:bold;
 	font-size: 1em;
 	color: #005884;
@@ -28,6 +37,35 @@ header{
 	text-align: left
 	line-height: 0.86em;
 	padding-left: 5%;
-	padding-top: 24px;
+	/*paddings-top: 24px;*/
     
 }
+section {
+	margin-left: 20%;
+}
+#inicio{
+	margin-top: 152px;
+	max-width: 40%;
+}
+#sobre {
+	padding-bottom: 10%;
+	background: url(assets/flowers.svg) repeat-x bottom left;
+	background-size: 80%;
+
+}
+
+/*.flowers {
+	background: url(assets/flowers.svg);
+	background-repeat: repeat-y;
+	background-attachment: local;
+	width: 100%;
+	height: 100px;
+	background: blue;
+}
+*/
+
+
+
+
+
+
