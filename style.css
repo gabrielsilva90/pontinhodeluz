@@ -1,21 +1,31 @@
-html, body{
-	margin: 0;
-	padding:0;
-    display: flex;
-    flex-direction: column;
+html, body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  position: relative;
+}
+
+img {
+  max-width: 300px;
+}
+
 body{
-	background: url(assets/home.png) no-repeat 90% 123px, 
-	url(assets/home-bc.png) no-repeat right top ;
-	/*background-repeat:no-repeat;
-	background-position:right top;*/
-	background-size: 22%, 35%;
+	background: url(assets/home.png) no-repeat 90% 135px, 
+	url(assets/home-bc.png) no-repeat right top;
+	background-size: 15%, 35%;
 	width: 100%;
 }
 
 header{
 	margin: 0;
-	padding:0;
+	padding: 0;
 }
 
 .menu {
@@ -24,48 +34,193 @@ header{
 	left: 5%;
 	z-index: 1;
 }
+
 .menu img{
-	width: 89px;
-	padding-left: 0%;
-	/*padding-top: 50px;*/
+	width: 120px;
+	margin: 5% 0;
 }
+
+.menu nav ul {
+	padding: 0;
+	list-style: none;
+}
+
 .menu nav ul li{
-	font-family:bold;
+	font-family: 'Raleway-Regular';
 	font-size: 1em;
 	color: #005884;
 	font-style: normal;
 	text-align: left
 	line-height: 0.86em;
-	padding-left: 5%;
-	/*paddings-top: 24px;*/
-    
+	margin: 10% 0;
 }
+
 section {
-	margin-left: 20%;
+	max-width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	min-height: 175px;
 }
+
+.container {
+	width: 55%;
+	margin: 0 auto;
+}
+
+section h1,
+section h2 {
+	color: #005884;
+}
+
+section p {
+	color: #005884;
+}
+
 #inicio{
-	margin-top: 152px;
-	max-width: 40%;
+	margin-top: 11.15%;
 }
+
+#inicio h1,
+#inicio h2 {
+	font-family: 'Sunday-Regular';
+	font-size: 1.25em;
+	color: #005884;
+	font-style: normal;
+	text-align: left;
+	line-height: 2.25em;
+}
+
+#solidariedade,
+#programas,
+#parceiros,
+#campanhas {
+	margin: 5% 0;
+}
+
 #sobre {
-	padding-bottom: 10%;
+	padding-bottom: 15%;
 	background: url(assets/flowers.svg) repeat-x bottom left;
-	background-size: 80%;
-
+	background-size: 60%;
 }
 
-/*.flowers {
-	background: url(assets/flowers.svg);
-	background-repeat: repeat-y;
-	background-attachment: local;
+#solidariedade .container .item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 2% .5%;
+}
+
+#solidariedade .container .container-gallery {
+	display: flex;
+}
+
+#solidariedade .container .item img {
+	max-width: 225px;
+}
+
+#programas .container .item {
+	display: flex;
+	justify-content: space-between;
+	margin: 2% 0;
+}
+
+#programas .container .item p {
+	width: 50%
+}
+
+#programas img {
+	max-width: 100px;
+	margin: 0 2%;
+}
+
+#campanhas .container .item {
+	display: flex;
+	flex-direction: row;
+}
+
+#campanhas .container .item p {
+	margin-right: 2%;
+}
+
+#parceiros .container .item {
+	display: flex;
+	flex-direction: row;
+}
+
+#parceiros .container .item img {
+	max-width: 200px;
+	margin-right: 2%;
+}
+
+footer {
+	padding-bottom: 15%;
+	background: url(assets/footer-bc.jpg)  repeat-x bottom left;
+	background-size: 100%;
 	width: 100%;
-	height: 100px;
-	background: blue;
+  height: 100vh;
 }
-*/
 
+@font-face {
+  font-family: 'Raleway-Bold';
+  src: url('assets/Raleway-Bold.ttf');
+}
 
+@font-face {
+  font-family: 'Raleway-Regular';
+  src: url('assets/Raleway-Regular.ttf');
+}
 
+@font-face {
+  font-family: 'Raleway-Semibold';
+  src: url('assets/Raleway-Regular.ttf');
+}
 
+@font-face {
+  font-family: 'Sunday-Regular';
+  src: url('assets/Sunday-Regular.otf');
+}
 
+@media (max-width: 760px) {
 
+		body {
+    	background: url(assets/home.png) no-repeat 90% 135px, url(assets/home-bc.png) no-repeat right top;
+    	background-size: 30%, 60%;
+  	}
+
+		header {
+			display: flex;
+			width: 80%;
+		}
+
+		.container {
+			max-width: 90%;
+		}
+
+		header .menu {
+			position: static;
+		}
+
+		header .menu nav {
+			margin-top: -150%;
+			visibility: hidden;
+		}
+
+		header .menu img {
+			margin-top: 50%;
+			width: 150px;
+		}
+
+    #solidariedade .container-gallery,
+    #programas .item,
+    #campanhas .item,
+    #parceiros .item {
+    	display: flex;
+    	flex-direction: column;
+    	flex-wrap: wrap;
+    }
+
+    #programas .container .item p {
+    	width: 100%;
+    }
+}
