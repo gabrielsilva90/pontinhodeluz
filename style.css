@@ -5,6 +5,7 @@ html, body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-family: 
 }
 
 *, *:before, *:after {
@@ -50,7 +51,7 @@ header{
 	font-size: 1em;
 	color: #005884;
 	font-style: normal;
-	text-align: left
+	text-align: left;
 	line-height: 0.86em;
 	margin: 10% 0;
 }
@@ -74,7 +75,15 @@ section h2 {
 }
 
 section p {
+
+	font-family: 'raleway-regular';
+	font-size: 1em;
 	color: #005884;
+	font-style: normal;
+	text-align: left;
+	line-height: 0.86em;
+	
+
 }
 
 #inicio{
@@ -158,9 +167,23 @@ footer {
 	background: url(assets/footer-bc.jpg)  repeat-x bottom left;
 	background-size: 100%;
 	width: 100%;
-  height: 100vh;
+	height: 100vh;
 }
+/*footer p{
+Font-Family: Raleway-Bold
+Font-Size: 1 em
+Color: #ffffff
+Font-Style: normal
+Text-Align: left
+Line-Height: 0.86 em
 
+Font-Family: Raleway-Regular
+Font-Size: 1 em
+Color: #ffffff
+Font-Style: normal
+Text-Align: left
+Line-Height: 0.86 em
+}*/
 @font-face {
   font-family: 'Raleway-Bold';
   src: url('assets/Raleway-Bold.ttf');
