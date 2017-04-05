@@ -62,13 +62,14 @@ section {
 	max-width: 100%;
 	display: flex;
 	flex-direction: column;
-	margin: 0 auto;
+	/*margin: 0 auto;*/
+	margin-left: 23%;
 	min-height: 175px;
 }
 
 .container {
 	width: 55%;
-	margin: 0 auto;
+	/*margin: 0 auto;*/
 }
 
 section h1,
@@ -99,20 +100,24 @@ section p {
 	line-height: 2.25em;
 }
 
-#solidariedade,
+/*#solidariedade,
 #programas,
 #parceiros,
 #campanhas {
 	margin: 5% 0;
-}
+}*/
 
 #sobre {
 	padding-bottom: 15%;
 	background: url(assets/flowers.svg) repeat-x bottom left;
 	background-size: 60%;
 	/*background-position-x:-20px;*/
+	margin: 0 auto;
+	width: 100%;
 }
-
+#sobre .container {
+	margin-left: 23%;
+}
 #solidariedade .container .item {
 	display: flex;
 	flex-direction: column;
@@ -198,7 +203,7 @@ section p {
 	margin-right: 2%;
 }
 
-footer {
+#faca-parte {
 	padding-bottom: 50px;
 	background: url(assets/footer-bc.jpg)  repeat-x bottom left;
 	background-size: 100%;
@@ -209,23 +214,8 @@ footer {
 	justify-content: flex-end;
 	align-items: center;
 }
-footer p{
-	font-family:'raleway-regular';
-	font-size: 1em;
-	color: #ffffff;
-	font-style: normal;
-	text-align: left;
-	line-height: 0.86em;
-}
-.framesocial{
-	width: 50%;
-	height: 25%;
-	background-color:black;
-	margin: 1%;
-	flex-grow: 1;
-	flex-grow: 1;
-}
-footer h2{
+
+#faca-parte h2{
 	font-family:'Sunday-Regular';
 	font-size:1.4em;
 	color: #FFFFFF;
@@ -234,10 +224,35 @@ footer h2{
 	line-height:2.25em;
 	margin: 100px; /*enquanto não tem a imagem */
 }
-footer img{
-	margin: 100px;
 
+#faca-parte .container {
+	width: 80%;
+	margin-left: 300px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
 }
+#faca-parte p{
+	font-family:'raleway-regular';
+	font-size: 1em;
+	color: #ffffff;
+	font-style: normal;
+	text-align: left;
+	line-height: 0.86em;
+	width: 50%;
+}
+#faca-parte .framesocial{
+	width: 25%;
+	/*height: 25%;*/
+	background: #000;
+	margin: 1%;
+	z-index: 1;
+}
+
+/*footer img{
+	margin: 100px;
+}*/
 
 @font-face {
   font-family: 'Raleway-Bold';
@@ -258,7 +273,14 @@ footer img{
   font-family: 'Sunday-Regular';
   src: url('assets/Sunday-Regular.otf');
 }
-
+@media (max-width: 1000px) {
+	section {
+		margin-left: 26%;
+	}	
+	#sobre .container {
+		margin-left: 26%;
+	}
+}
 @media (max-width: 760px) {
 
 	body {
@@ -289,7 +311,7 @@ footer img{
 		width: 150px;
 	}
 
-    /*#solidariedade .container-gallery,*/
+    /*#solidariedade .container-gallery,
     /*#programas .item*/,
     /*#campanhas .item,*/
     /*#parceiros .item {
