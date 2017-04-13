@@ -13,20 +13,11 @@ html, body {
   position: relative;
 }
 
-img {
-  max-width: 300px;
-}
-
 body{
-	background: url(assets/home.png) no-repeat 90% 135px, 
+	background: url(assets/home.png) no-repeat 100% 135px, 
 	url(assets/home-bc.png) no-repeat right top;
 	background-size: 15%, 35%;
 	width: 100%;
-}
-
-header{
-	margin: 0;
-	padding: 0;
 }
 
 .menu {
@@ -58,18 +49,16 @@ header{
 	line-height: 0.86em;
 	text-decoration: none;
 }
+
 section {
-	max-width: 100%;
 	display: flex;
 	flex-direction: column;
-	/*margin: 0 auto;*/
-	margin-left: 23%;
-	min-height: 175px;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
 	width: 55%;
-	/*margin: 0 auto;*/
 }
 
 section h1,
@@ -100,24 +89,23 @@ section p {
 	line-height: 2.25em;
 }
 
-/*#solidariedade,
-#programas,
-#parceiros,
-#campanhas {
-	margin: 5% 0;
-}*/
-
 #sobre {
 	padding-bottom: 15%;
 	background: url(assets/flowers.svg) repeat-x bottom left;
 	background-size: 60%;
-	/*background-position-x:-20px;*/
 	margin: 0 auto;
 	width: 100%;
 }
-#sobre .container {
-	margin-left: 23%;
+
+#solideriedade { 
+  display: flex; 
 }
+
+#solidariedade .container {
+  display: flex;
+  flex-direction: column;
+}
+
 #solidariedade .container .item {
 	display: flex;
 	flex-direction: column;
@@ -125,25 +113,22 @@ section p {
 	margin: 2% .5%;
 }
 
+#solidariedade > div > div > div > img {
+  max-width: 300px;
+}
+
 #solidariedade .container .container-gallery {
 	display: flex;
+  flex-wrap: wrap;
 }
 
-#solidariedade .container .item img {
-	max-width: 225px;
-}
-#programas .container{
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-
-}
 #programas .container .item {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	margin: 2% 0;
 }
+
 #programas img {
 	max-width: 10%;
 	margin: 0 2%;
@@ -176,8 +161,6 @@ section p {
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: flex-start;
-
-	
 }
 
 #campanhas .item div{
@@ -204,15 +187,12 @@ section p {
 }
 
 #faca-parte {
-	padding-bottom: 50px;
-	background: url(assets/footer-bc.jpg)  repeat-x bottom left;
-	background-size: 100%;
-	width: 100%;
-	height: 100vh;
+	background: url(assets/footer-bc.jpg)  repeat left bottom;
 	display:flex;
-	flex-direction: column;
-	justify-content: flex-end;
-	align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3% 0;
+  margin-top: 3%; 
 }
 
 #faca-parte h2{
@@ -222,32 +202,29 @@ section p {
 	font-style: normal;
 	text-align: left;
 	line-height:2.25em;
-	margin: 100px; /*enquanto não tem a imagem */
 }
 
 #faca-parte .container {
-	width: 80%;
-	margin-left: 300px;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	align-items: center;
-	justify-content: flex-start;
+	justify-content: center;
+  width: 60%;
+  margin: 0 auto;
 }
-#faca-parte p{
+
+#faca-parte .container div {
+  display: flex;
+  flex-direction: column;
+}
+
+#faca-parte p {
 	font-family:'raleway-regular';
 	font-size: 1em;
 	color: #ffffff;
 	font-style: normal;
 	text-align: left;
-	line-height: 0.86em;
-	width: 50%;
-}
-#faca-parte .framesocial{
-	width: 25%;
-	/*height: 25%;*/
-	background: #000;
-	margin: 1%;
-	z-index: 1;
+	line-height: 1em;
 }
 
 /*footer img{
@@ -273,14 +250,7 @@ section p {
   font-family: 'Sunday-Regular';
   src: url('assets/Sunday-Regular.otf');
 }
-@media (max-width: 1000px) {
-	section {
-		margin-left: 26%;
-	}	
-	#sobre .container {
-		margin-left: 26%;
-	}
-}
+
 @media (max-width: 760px) {
 
 	body {
@@ -310,16 +280,6 @@ section p {
 		margin-top: 50%;
 		width: 150px;
 	}
-
-    /*#solidariedade .container-gallery,
-    /*#programas .item*/,
-    /*#campanhas .item,*/
-    /*#parceiros .item {
-    	display: flex;
-    	flex-direction: column;
-    	flex-wrap: wrap;
-    }*/
-
     #programas .container .item p {
     	width: 100%;
     }
@@ -339,5 +299,13 @@ section p {
     }
     #programas img:first-child {
     	max-width: 15%;
+    }
+    #parceiros .container .item {
+      display: flex;
+      flex-direction: column;
+    }
+    #parceiros .container .item img {
+      width: 150px;
+      margin: 10% 2%;
     }
 }
