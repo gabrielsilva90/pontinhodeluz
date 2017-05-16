@@ -53,8 +53,8 @@ body{
 section {
 	display: flex;
 	flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  	justify-content: center;
+  	align-items: center;
 }
 
 .container {
@@ -63,7 +63,17 @@ section {
 
 section h1,
 section h2 {
+	font-family: 'Sunday-Regular';
 	color: #005884;
+}
+
+#sobre .container h2,
+#solidariedade .container h2,
+#programas .container h2,
+#campanhas .container h2,
+#parceiros .container h2 {
+	font-size: 1.25em;
+	margin: 5% 0;
 }
 
 section p {
@@ -191,7 +201,6 @@ section p {
 	display:flex;
   flex-direction: column;
   justify-content: center;
-  padding: 3% 0;
   margin-top: 3%; 
 }
 
@@ -214,8 +223,16 @@ section p {
 }
 
 #faca-parte .container div {
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	margin: 1%;
+}
+
+#faca-parte .container div .contato {
+	flex-direction: column;
+}
+
+#faca-parte .container div .contato p {
+	margin: 0.5em 0;
 }
 
 #faca-parte p {
@@ -226,6 +243,7 @@ section p {
 	text-align: left;
 	line-height: 1em;
 }
+
 
 /*footer img{
 	margin: 100px;
@@ -308,4 +326,10 @@ section p {
       width: 150px;
       margin: 10% 2%;
     }
+}
+@media (max-width: 990px) {
+    #faca-parte .container div {
+		flex-direction: column;
+		margin: 1%;
+	}
 }
