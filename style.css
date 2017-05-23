@@ -85,18 +85,18 @@ section p {
 	/*line-height: 1em;*/
 }
 
-#inicio{
-	margin-top: 11.15%;
-}
-
-#inicio h1,
-#inicio h2 {
+#sobre h1,
+#sobre h2 {
 	font-family: 'Sunday-Regular';
 	font-size: 1.25em;
 	color: #005884;
 	font-style: normal;
 	text-align: left;
-	line-height: 2.25em;
+	line-height: 1.5em;
+}
+
+#sobre h1 {
+	margin-top: 22.5%;
 }
 
 #sobre {
@@ -136,7 +136,7 @@ section p {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin: 2% 0;
+	margin: 40px 0;
 }
 
 #programas img {
@@ -193,7 +193,19 @@ section p {
 
 #parceiros .container .item img {
 	max-width: 200px;
-	margin-right: 2%;
+	height: 50px;
+	margin-right: 70px;
+}
+
+.vainaweb::before {
+    position: absolute;
+    width: 135px;
+    color: #2e3192;
+    font-size: 12px;
+    border-radius: 10%;
+    bottom: 60px;
+    font-family: sans-serif;
+    content: "Site produzido por:";
 }
 
 #faca-parte {
@@ -201,7 +213,8 @@ section p {
 	display:flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 3%; 
+  margin-top: 3%;
+  width: 100%;
 }
 
 #faca-parte h2{
@@ -280,6 +293,10 @@ section p {
 		max-width: 90%;
 	}
 
+	#sobre .container {
+		width: 75%
+	}
+
 	header .menu {
 		position: static;
 	}
@@ -318,7 +335,7 @@ section p {
       flex-direction: column;
     }
     #parceiros .container .item img {
-      width: 150px;
+      width: 140px;
       margin: 10% 2%;
     }
 }
